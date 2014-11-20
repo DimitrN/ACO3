@@ -11,6 +11,6 @@ public class Bow extends Weapon {
 
     @Override
     public int use() {
-        return 60;
+        return 55;
     }
 }
