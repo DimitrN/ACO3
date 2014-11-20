@@ -1,0 +1,22 @@
+package ua.artcode.week1.day1;
+
+public class Motorcycle {
+
+    int speed;
+    String model;
+
+    /*
+    * public Motorcycle(){} // default const
+    * */
+
+
+    public String showInfo(){
+        return ("moto = {model - " + model +
+                ", speed - " + speed + "}");
+    }
+
+    public boolean isFaster(Motorcycle other){
+        return speed > other.speed;
+    }
+
+}
