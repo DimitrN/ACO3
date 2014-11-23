@@ -11,6 +11,17 @@ import java.util.Date;
  */
 public class TicketDesk {
 
+    TicketLux [] Lux = new TicketLux[18];
+    TicketCoupe [] Coupe = new TicketCoupe[36];
+    TicketGeneral [] general = new TicketGeneral[54];
+
+
+
+
+
+
+
+
     /*private String [] departurePoint = {"Kiev","Lviv","Odessa","Donetsk","Vinnitsa","Riga" };
     private String [] destinationPoint = {"Kiev","Lviv","Odessa","Donetsk","Vinnitsa","Riga" };
     private String departureDate;

@@ -12,17 +12,94 @@ import java.util.Scanner;
  */
 public class Ticket {
 
+    private String departurePoint;// = {"Kiev","Lviv","Odessa","Donetsk","Vinnitsa","Riga" };
+    private String destinationPoint;// = {"Kiev","Lviv","Odessa","Donetsk","Vinnitsa","Riga" };
+    private String departureDate;
+    private int trainNumber;
+    private byte wagonNumber;
+    private byte seatNumber;
+    private double ticketPrice;
+
+    private byte wagonType;
+
+    public Ticket() {
+    }
+
+    public Ticket(String departurePoint, String destinationPoint, String departureDate, int trainNumber, byte wagonNumber, byte seatNumber, double ticketPrice) {
+        this.departurePoint = departurePoint;
+        this.destinationPoint = destinationPoint;
+        this.departureDate = departureDate;
+        this.trainNumber = trainNumber;
+        this.wagonNumber = wagonNumber;
+        this.seatNumber = seatNumber;
+        this.ticketPrice = ticketPrice;
+    }
+
+
+    //GETTERS
+    public String getDeparturePoint() {
+        return departurePoint;
+    }
+
+    public String getDestinationPoint() {
+        return destinationPoint;
+    }
+
+    public String getDepartureDate() {
+        return departureDate;
+    }
+
+    public int getTrainNumber() {
+        return trainNumber;
+    }
+
+    public byte getWagonNumber() {
+        return wagonNumber;
+    }
+
+    public byte getSeatNumber() {
+        return seatNumber;
+    }
+
+    public double getTicketPrice() {
+        return ticketPrice;
+    }
+
+    //SETTERS
+
+    public void setDeparturePoint(String departurePoint) {
+        this.departurePoint = departurePoint;
+    }
+
+    public void setDestinationPoint(String destinationPoint) {
+        this.destinationPoint = destinationPoint;
+    }
+
+    public void setDepartureDate(String departureDate) {
+        this.departureDate = departureDate;
+    }
+
+    public void setTrainNumber(int trainNumber) {
+        this.trainNumber = trainNumber;
+    }
+
+    public void setWagonNumber(byte wagonNumber) {
+        this.wagonNumber = wagonNumber;
+    }
+
+    public void setSeatNumber(byte seatNumber) {
+        this.seatNumber = seatNumber;
+    }
+
+    public void setTicketPrice(double ticketPrice) {
+        if (wagonType==1) this.ticketPrice = ticketPrice;
+        if (wagonType==2) this.ticketPrice = ticketPrice*0.8;
+        if (wagonType==3) this.ticketPrice = ticketPrice*0.5;
+    }
 
 
 
-
-
-
-
-
-
-
-        /*Scanner sc = new Scanner(System.in);
+    /*Scanner sc = new Scanner(System.in);
         System.out.println("Enter Point of departure");
         String depP = sc.nextLine();
 
