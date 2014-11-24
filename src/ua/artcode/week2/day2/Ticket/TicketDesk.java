@@ -17,6 +17,20 @@ public class TicketDesk {
 
 
 
+    public void allTicketsInfo (){
+        System.out.println("Lux - " + Lux.length);
+        System.out.println("Coupe - " + Coupe.length);
+        System.out.println("General - " + general.length);
+    }
+
+    public void ticketInfo (Ticket someTicket) {
+        System.out.println(someTicket.getTrainNumber());
+        System.out.println(someTicket.getSeatNumber());
+        System.out.println(someTicket.getWagonNumber());
+    }
+
+
+
 
 
 
