@@ -36,6 +36,9 @@ public class TicketDesk {
 
 
 
+
+
+
     /*private String [] departurePoint = {"Kiev","Lviv","Odessa","Donetsk","Vinnitsa","Riga" };
     private String [] destinationPoint = {"Kiev","Lviv","Odessa","Donetsk","Vinnitsa","Riga" };
     private String departureDate;
