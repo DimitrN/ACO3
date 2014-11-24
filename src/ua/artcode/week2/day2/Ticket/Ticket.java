@@ -92,10 +92,8 @@ public class Ticket {
     }
 
     public void setTicketPrice(double ticketPrice) {
-        if (wagonType==1) this.ticketPrice = ticketPrice;
-        if (wagonType==2) this.ticketPrice = ticketPrice*0.8;
-        if (wagonType==3) this.ticketPrice = ticketPrice*0.5;
-    }
+        this.ticketPrice = ticketPrice;
+        }
 
 
 
