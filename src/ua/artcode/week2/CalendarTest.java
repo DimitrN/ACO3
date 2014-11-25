@@ -1,7 +1,9 @@
 package ua.artcode.week2;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 /**
@@ -18,6 +20,11 @@ public class CalendarTest {
         SimpleDateFormat sdate = new SimpleDateFormat("2014/11/29 10:50");
         System.out.println(sdate.format(date));
         System.out.println();
+
+
+        Calendar calendar = new GregorianCalendar(2000,10,12,22,22);
+        System.out.printf("Date %tc", calendar.getTime());
+        Calendar calendar1 = Calendar.getInstance();
 
     }
 }

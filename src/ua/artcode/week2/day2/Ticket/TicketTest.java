@@ -10,6 +10,5 @@ package ua.artcode.week2.day2.Ticket;
 public class TicketTest {
     public static void main(String[] args) {
         WagonType wagonType = new WagonType();
-        if (wagonType){}
     }
 }
