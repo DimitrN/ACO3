@@ -1,0 +1,8 @@
+Ctrl+K - commit and Push to GitHub;
+Alt+9 - commit history;
+Alt+Ё - VCS operation;
+Alt_Insert - create new Object / GET, SET, Override...
+psvm+TAB, sout+TAB, fori+TAB
+Ctrl+Shift+/ - make a comment
+Ctrl+Shift+↓↑ - move selected text up/down
+Ctrl+D - copy current row

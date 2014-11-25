@@ -26,7 +26,7 @@ public class Merger {
         return res;
     }
     public static void main(String[] args) {
-        int[] m1 = {2,45,50,70,67,89};
+        int[] m1 = {2,45,50,67,70,100};
         int[] m2 = {1,5,7,8,8,89};
         System.out.println(Arrays.toString(merge(m1,m2)));
     }
