@@ -28,6 +28,6 @@ public class Merger {
     public static void main(String[] args) {
         int[] m1 = {2,45,50,70,67,89};
         int[] m2 = {1,5,7,8,8,89};
-        System.out.println(Arrays.toString(merge(m1, m2)));
+        System.out.println(Arrays.toString(merge(m1,m2)));
     }
 }
