@@ -1,4 +1,6 @@
-package ua.artcode.week3.day1.comp;
+package ua.artcode.week3.day1;
+
+import ua.artcode.week3.day1.comp.Dog;
 
 /**
  * Created with IntelliJ IDEA.

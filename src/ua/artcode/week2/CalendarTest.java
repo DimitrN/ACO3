@@ -21,10 +21,8 @@ public class CalendarTest {
         System.out.println(sdate.format(date));
         System.out.println();
 
-
         Calendar calendar = new GregorianCalendar(2000,10,12,22,22);
         System.out.printf("Date %tc", calendar.getTime());
         Calendar calendar1 = Calendar.getInstance();
-
     }
 }

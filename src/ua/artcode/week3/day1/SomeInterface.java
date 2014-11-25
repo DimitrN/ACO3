@@ -16,6 +16,7 @@ public interface SomeInterface {
 
     public static final String DAY = "Monday";
     int RANGE = 45;
+
     public abstract void go ();
     void s();
 
