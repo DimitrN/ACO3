@@ -6,3 +6,6 @@ psvm+TAB, sout+TAB, fori+TAB
 Ctrl+Shift+/ - make a comment
 Ctrl+Shift+↓↑ - move selected text up/down
 Ctrl+D - copy current row
+Ctrl+N - search class
+FILO - first in last out
+FIFO - first in first out

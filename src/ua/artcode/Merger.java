@@ -1,5 +1,7 @@
 package ua.artcode;
 
+import ua.artcode.week3.TimeAction;
+
 import java.util.Arrays;
 
 /**
@@ -9,8 +11,13 @@ import java.util.Arrays;
  * Time: 13:18
  * To change this template use File | Settings | File Templates.
  */
-public class Merger {
-    public static int[] merge(int[] mas1, int[] mas2) {
+public class Merger implements TimeAction {
+
+    private int [] mas1;
+    private int [] mas2;
+
+    public Merger (mas1,mas2);
+    public  int[] merge(int[] mas1, int[] mas2) {
         int[] res = new int[mas1.length + mas2.length];
         for (int i = 0, j = 0, k = 0; k < res.length; k++) {
             if (i >= mas1.length) {
@@ -29,5 +36,13 @@ public class Merger {
         int[] m1 = {2,45,50,67,70,100};
         int[] m2 = {1,5,7,8,8,89};
         System.out.println(Arrays.toString(merge(m1,m2)));
+    }
+
+
+    @Override
+    public void action(Object...arr) {
+        merge(mas1, mas2);
+
+
     }
 }
