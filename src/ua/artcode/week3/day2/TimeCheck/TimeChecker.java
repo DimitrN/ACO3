@@ -1,4 +1,4 @@
-package ua.artcode.week3;
+package ua.artcode.week3.day2.TimeCheck;
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,7 +8,7 @@ package ua.artcode.week3;
  * To change this template use File | Settings | File Templates.
  */
 public class TimeChecker {
-    public static void ckeck (TimeAction actionObj){
+    public static void check (TimeAction actionObj){
         long start = System.currentTimeMillis();
         actionObj.action();
         System.out.println("Action time of "+actionObj.getClass().getSimpleName()+

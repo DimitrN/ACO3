@@ -1,6 +1,6 @@
 package ua.artcode;
 
-import ua.artcode.week3.TimeAction;
+import ua.artcode.week3.day2.TimeCheck.TimeAction;
 
 import java.util.Arrays;
 
@@ -16,8 +16,12 @@ public class Merger implements TimeAction {
     private int [] mas1;
     private int [] mas2;
 
-    public Merger (mas1,mas2);
-    public  int[] merge(int[] mas1, int[] mas2) {
+    public Merger(int[] mas1, int[] mas2) {
+        this.mas1 = mas1;
+        this.mas2 = mas2;
+    }
+
+    public  int[] merge() {
         int[] res = new int[mas1.length + mas2.length];
         for (int i = 0, j = 0, k = 0; k < res.length; k++) {
             if (i >= mas1.length) {
@@ -32,17 +36,11 @@ public class Merger implements TimeAction {
         }
         return res;
     }
-    public static void main(String[] args) {
-        int[] m1 = {2,45,50,67,70,100};
-        int[] m2 = {1,5,7,8,8,89};
-        System.out.println(Arrays.toString(merge(m1,m2)));
-    }
 
 
     @Override
-    public void action(Object...arr) {
-        merge(mas1, mas2);
-
+    public void action() {
+        merge();
 
     }
 }

@@ -16,7 +16,9 @@ public class TestStack {
         as.push("D");
         as.push("E");
         System.out.println(as);
-
-
+        System.out.println(as.pop());
+        System.out.println(as.pop());
+        System.out.println(as.pop());
+        System.out.println(as.pop());
     }
 }

@@ -1,4 +1,4 @@
-package ua.artcode.week3;
+package ua.artcode.week3.day2.TimeCheck;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,6 +9,5 @@ package ua.artcode.week3;
  */
 public interface TimeAction {
 
-    private int []
-    void action(Object... args);// может прити последовательность Object'ов
+    void action();
 }
