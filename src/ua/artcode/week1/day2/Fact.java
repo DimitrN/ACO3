@@ -12,4 +12,6 @@ public class Fact {
         if (i==0)return 1;
         return fact(i-1)*i;
     }
+
+    //return i < 2 ? 1: i * fact(i-1);
 }
