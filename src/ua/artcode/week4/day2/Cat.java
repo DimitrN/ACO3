@@ -1,6 +1,7 @@
 package ua.artcode.week4.day2;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,36 +17,15 @@ public class Cat implements Cloneable, Comparable <Cat> {
     private double weight;
     private int[] mas;
 
-
     public Cat() {
     }
 
-    public Cat(int age, String name, double weight, int[] mas) {
+    public Cat(int age, String Home, double weight, int[] mas) {
         this.age = age;
-        this.Home = name;
+        this.Home = Home;
         this.weight = weight;
         this.mas = mas;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public int getAge() {
         return age;
@@ -81,6 +61,11 @@ public class Cat implements Cloneable, Comparable <Cat> {
 
 
     @Override
+    public int compareTo(Cat o) {
+        return 0;
+    }
+
+    @Override
     public String toString() {
         return "Cat{" +
                 "age=" + age +
@@ -92,15 +77,22 @@ public class Cat implements Cloneable, Comparable <Cat> {
 
 
     @Override
-    public Cat clone() /*throws CloneNotSupportedException*/{
-    Cat cloned = (Cat) super.clone();
+    public Cat clone() throws CloneNotSupportedException{
+        Cat cloned = (Cat) super.clone();
         cloned.setHome(new String(Home));
         cloned.setMas(Arrays.copyOf(mas,mas.length));
         return cloned;
-
     }
 
+    public class OldWoman {
+        int experience;
+        boolean hasMan = false;
+    }
 
-
-
+    public static class CatAgeComparator implements Comparator <Cat> {
+        @Override
+        public int compare(Cat o1, Cat o2) {
+            return o1.age - o2.age;
+        }
+    }
 }

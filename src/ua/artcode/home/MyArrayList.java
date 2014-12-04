@@ -1,6 +1,4 @@
-package ua.artcode.week3.day2.HomeTask;
-
-import ua.artcode.home.AbstractArrayList;
+package ua.artcode.home;
 
 import java.util.List;
 

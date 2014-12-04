@@ -12,44 +12,29 @@ import java.util.Arrays;
  * To change this template use File | Settings | File Templates.
  */
 public class NodeUtils {
-    public static getLast (Node node){
 
-    }
-
-    public static Node getByIndex (Node chain, int index){
-
-        Node iter = chain;
-        int i = 0;
-        while (iter!=null){
-            if (index==0){
-                return iter;
-            } else {
-                index--;
-                iter = iter.getNext();
-            }
-        }
-        return  null;
-    }
-
-    public static void print (Node chain){
-        while (chain!=0){
-            System.out.println(chain.getValue());
-            chain = chain.getNext();//Step
-
+    public static void print(Node chain){
+        while (chain != null){ // exit condition
+            System.out.println(chain.getValue()); // action
+            chain = chain.getNext(); // step
         }
     }
-
-    private static String toString (Node curr){
-        return curr != null ? curr.getValue()+toString(curr.getNext()) : "";
+    public static Object[] toArray(Node chain){
+        return null;
     }
-
-    public static Node genChainMy (int [] mas){
-        Node someNode = new Node();
-        if (someNode.getNext()==null) return Node(mas[0],null);
-        return genChainMy(Arrays.copyOfRange(mas,1,mas.length));
+    public static Node genChain(int[] mas){
+        if(mas.length == 0){
+            return null;
+        } else {
+            Node next = genChain(Arrays.copyOfRange(mas,1, mas.length));
+            Node current = new Node(mas[0], next);
+            return current;
+        }
     }
-
-    public static Node
+    public static String toString(Node curr){
+        return curr != null ? "[" + curr.getValue() + "]-->" +
+                toString(curr.getNext()) : "null";
+    }
 
 
 }

@@ -1,6 +1,7 @@
 package ua.artcode.data_structure.java;
 
 import ua.artcode.dynamic_ds.Node;
+import java.util.Iterator;
 
 /**
  * Created with IntelliJ IDEA.

@@ -1,6 +1,7 @@
 package ua.artcode.data_structure.java;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,7 +29,8 @@ public class ArrayStack implements iStack {
 
     @Override
     public Object pop() {
-        if (top < mas.length){
+        if(top == 0){
+            System.err.println("Stack is empty");
             return null;
         }
         return mas [--top];//вначале -- потом вернет значение в массив
@@ -45,4 +47,11 @@ public class ArrayStack implements iStack {
         }
         return res.toString();
     }
+
+
+    @Override
+    public Iterator iterator () {
+        return null;
+    }
+
 }

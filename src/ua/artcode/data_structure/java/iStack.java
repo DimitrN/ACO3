@@ -7,14 +7,14 @@ package ua.artcode.data_structure.java;
  * Time: 21:28
  * To change this template use File | Settings | File Templates.
  */
-public interface iStack {
+public interface iStack <T> extends Iterable <T> {
 
     /*
     * put element on top of stack
     * @param o element for stack
     * */
 
-    void push(Object o);
+    void push(T o);
 
 
     /**
@@ -22,5 +22,5 @@ public interface iStack {
      * @return element from top
      */
 
-    Object pop();
+    T pop();
 }

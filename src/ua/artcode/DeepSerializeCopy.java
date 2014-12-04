@@ -16,20 +16,19 @@ import java.io.ObjectOutputStream;
  */
 public class DeepSerializeCopy {
 
-    public static Object deepClone (Object obj){
-        ByteOutputStream bos = new ByteOutputStream();
-
-
-        try {
-        ObjectOutputStream oos = new ObjectOutputStream(bos);
-        oos.writeObject(obj);
-            byte [] buff = bos.getBytes();
-            ByteInputStream bis = new ByteInputStream(bos.getBytes(),buff.length );
+    public static Object deepClone(Object obj){
+        try{
+// Obj -> BC -> buff
+            ByteOutputStream bos = new ByteOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(bos);
+            oos.writeObject(obj);
+            byte[] buff = bos.getBytes();
+//read from buff -> BC -> Object
+            ByteInputStream bis = new ByteInputStream(buff, buff.length);
             ObjectInputStream ois = new ObjectInputStream(bis);
             Object clone = ois.readObject();
-
-
-    } catch (IOException ex){
+            return clone;
+        } catch (IOException ex){
             ex.printStackTrace();
         } catch (ClassNotFoundException ex){
             ex.printStackTrace();
