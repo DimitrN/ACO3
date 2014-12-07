@@ -41,6 +41,5 @@ public class Merger implements TimeAction {
     @Override
     public void action() {
         merge();
-
     }
 }
