@@ -15,6 +15,7 @@ public enum  ProjectTrackingPriority {
     //MINOR                             MAJOR
 
     private final Integer range;
+
     private final String desc;
 
 
