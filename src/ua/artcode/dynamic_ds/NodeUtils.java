@@ -36,5 +36,20 @@ public class NodeUtils {
                 toString(curr.getNext()) : "null";
     }
 
+    public static Node reverse (Node curr){
+
+        Node first = null;
+        Node next = null;
+
+
+        while (curr != null){
+            next = curr.getNext();
+            curr.setNext(first);
+            first = curr;
+            curr = next;
+        }
+        return first;
+    }
+
 
 }

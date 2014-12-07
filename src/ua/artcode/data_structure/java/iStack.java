@@ -1,5 +1,7 @@
 package ua.artcode.data_structure.java;
 
+import java.util.Iterator;
+
 /**
  * Created with IntelliJ IDEA.
  * User: КЕП
@@ -23,4 +25,8 @@ public interface iStack <T> extends Iterable <T> {
      */
 
     T pop();
+
+
+    @Override
+    Iterator<T> iterator();
 }

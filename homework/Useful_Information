@@ -9,6 +9,6 @@ Ctrl+D - copy current row
 Ctrl+N - search class
 FILO - first in last out
 FIFO - first in first out
-Ctrl + Alt+V = вынести переменную
+Ctrl + Alt+V (C) = вынести переменную
 
 void action(Object... args);// может принимать последовательность Object'ов
