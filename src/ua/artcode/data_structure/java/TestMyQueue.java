@@ -8,7 +8,7 @@ package ua.artcode.data_structure.java;
  * To change this template use File | Settings | File Templates.
  */
 public class TestMyQueue {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         MyQueue myQueue = new MyQueue();
         myQueue.queue("1");
         myQueue.queue("2");
@@ -16,5 +16,5 @@ public class TestMyQueue {
         myQueue.queue("4");
         myQueue.queue("5");
         System.out.println(myQueue);
-    }
+    }*/
 }

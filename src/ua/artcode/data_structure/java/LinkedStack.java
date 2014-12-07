@@ -1,10 +1,11 @@
 package ua.artcode.data_structure.java;
 
-import ua.artcode.data_structure.java.exception.StackEmptyExeption;
+import ua.artcode.data_structure.java.exception.StackEmptyException;
 import ua.artcode.dynamic_ds.Node;
 import java.util.Iterator;
-
-
+/**
+ *
+ */
 public class LinkedStack implements iStack {
     private Node top;//null
     @Override
@@ -20,14 +21,13 @@ public class LinkedStack implements iStack {
     @Override
     public Object pop() {
         if (top == null) {
-            throw new StackEmptyExeption("Stack is empty");
+            throw new StackEmptyException("Stack is empty");
         } else {
             Object ret = top.getValue();
             top = top.getNext();
             return ret;
         }
     }
-
     @Override
     public Iterator iterator() {
         return null;
