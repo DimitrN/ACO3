@@ -35,4 +35,13 @@ public enum  ProjectTrackingPriority {
     public String getDesc() {
         return desc;
     }
+
+
+    @Override
+    public String toString() {
+        return "ProjectTrackingPriority{" +
+                "range=" + range +
+                ", desc='" + desc + '\'' +
+                '}';
+    }
 }
