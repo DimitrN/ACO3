@@ -2,6 +2,7 @@ package ua.artcode.data_structure.java;
 
 import ua.artcode.data_structure.java.exception.StackEmptyException;
 import ua.artcode.dynamic_ds.Node;
+
 import java.util.Iterator;
 /**
  *

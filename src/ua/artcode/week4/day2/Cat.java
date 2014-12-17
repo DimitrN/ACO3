@@ -1,5 +1,6 @@
 package ua.artcode.week4.day2;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -10,7 +11,7 @@ import java.util.Comparator;
  * Time: 19:13
  * To change this template use File | Settings | File Templates.
  */
-public class Cat implements Cloneable, Comparable <Cat> {
+public class Cat implements Serializable, Cloneable, Comparable <Cat> {
 
     private int age;
     private String Home;

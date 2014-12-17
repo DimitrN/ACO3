@@ -3,13 +3,9 @@ package ua.artcode.data_structure.java.exception;
 /**
  * се которые extends от RuntimeException являются unchecked
  */
-public class StackEmptyExeption extends RuntimeException {
+public class StackEmptyException extends RuntimeException {
 
-
-
-
-
-    public StackEmptyExeption (String message) {
+    public StackEmptyException (String message) {
         super(message);
     }
 }

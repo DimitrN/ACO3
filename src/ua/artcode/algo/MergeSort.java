@@ -1,14 +1,11 @@
 package ua.artcode.algo;
-
 import java.util.Arrays;
 
 /**
- * Created with IntelliJ IDEA.
- * User: КЕП
- * Date: 07.12.14
- * Time: 13:23
- * To change this template use File | Settings | File Templates.
+ * User: КЕП Date: 17.12.14 Time: 19:08
  */
+
+
 public class MergeSort {
     //buff for copy
     int[] buff;
