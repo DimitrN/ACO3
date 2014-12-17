@@ -1,3 +1,5 @@
+package JavaRush;
+
 /**
  * User: КЕП Date: 17.12.14 Time: 18:49
  */
