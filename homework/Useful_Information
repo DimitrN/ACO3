@@ -10,5 +10,8 @@ Ctrl+N - search class
 FILO - first in last out
 FIFO - first in first out
 Ctrl + Alt+V (C) = вынести переменную
+Ctrl + F12 - to see all class' methods list
+Alt F7 - показывает кто юзает интерфейс
 
 void action(Object... args);// может принимать последовательность Object'ов
+a1.equals(a2) --> a1.hashcode() == a2.hashcode(); если два объекта равны, то равны и их хэшкоды (не работает наоборот)
