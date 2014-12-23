@@ -29,6 +29,7 @@ public class FileUtils {
         }
     }
     public static void main(String[] args) {
-        dir(new File("c:/"));
+        //dir(new File("d:/"));
+        tree(new File("d:\\"),"d:\\Downloads_D/");
     }
 }
