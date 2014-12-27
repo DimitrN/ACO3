@@ -1,7 +1,7 @@
 package ua.artcode.week8;
 
-import ua.artcode.week3.day2.time_check.TimeAction;
-import ua.artcode.week3.day2.time_check.TimeChecker;
+import ua.artcode.week3.day2.TimeCheck.TimeAction;
+import ua.artcode.week3.day2.TimeCheck.TimeChecker;
 
 import java.util.Arrays;
 import java.util.Collection;
